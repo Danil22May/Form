@@ -6,6 +6,35 @@
     <title>Form</title>
 </head>
 <body>
-    
+    <form id="opinion_form" method="post" class="form-card">
+        <input type="text" name="Name">
+        <input type="email" name="Email">
+        <input type="text" name="Age">
+        <select name="" id="">
+            <option value="">Which option best describes you?</option>
+            <option value="Student">Student</option>
+            <option value="Worker">Worker</option>
+            <option value="Unemployment">Unemployment</option>
+        </select>
+        <fieldset>
+            <legend>Would you recommend this site?</legend>
+            <input type="radio" name="recommendation" value="yes" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="recommendation" value="no" id="no">
+            <label for="yes">No</label>
+        </fieldset>
+        <fieldset>
+        <legend>Choose languages and technologies you familliar with</legend>
+            <input type="checkbox" name="Java">
+            <label for="Java">Java</label>
+            <input type="checkbox" name="Php">
+            <label for="Php">Php</label>
+            <input type="checkbox" name="Spring">
+            <label for="Spring">Spring</label>
+            <input type="checkbox" name="Docker">
+            <label for="Docker">Docker</label>
+        </fieldset>
+        <input type="submit" value="Send">
+    </form>
 </body>
 </html>
