@@ -4,37 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form id="opinion_form" method="post" class="form-card">
-        <input type="text" name="Name">
-        <input type="email" name="Email">
-        <input type="text" name="Age">
-        <select name="" id="">
-            <option value="">Which option best describes you?</option>
-            <option value="Student">Student</option>
-            <option value="Worker">Worker</option>
-            <option value="Unemployment">Unemployment</option>
-        </select>
+        <div>
+            <input type="text" name="Name" id="name" placeholder="Name" class="input-text">
+        </div>
+        <div>
+            <input type="email" name="Email" id="email" placeholder="Email" class="input-text">
+        </div>
+        <div>
+            <input type="text" name="Age" id="age" placeholder="Age" class="input-text">
+        </div>
+            <select id="status" name="status">
+                <option value="">Which option best describes you?</option>
+                <option value="Student">Student</option>
+                <option value="Worker">Worker</option>
+                <option value="Unemployment">Unemployment</option>
+            </select>
         <fieldset>
             <legend>Would you recommend this site?</legend>
             <input type="radio" name="recommendation" value="yes" id="yes">
             <label for="yes">Yes</label>
             <input type="radio" name="recommendation" value="no" id="no">
-            <label for="yes">No</label>
+            <label for="no">No</label>
         </fieldset>
         <fieldset>
         <legend>Choose languages and technologies you familliar with</legend>
-            <input type="checkbox" name="Java">
-            <label for="Java">Java</label>
-            <input type="checkbox" name="Php">
-            <label for="Php">Php</label>
-            <input type="checkbox" name="Spring">
-            <label for="Spring">Spring</label>
-            <input type="checkbox" name="Docker">
-            <label for="Docker">Docker</label>
+            <div>
+                <input type="checkbox" name="Java" value="java">
+                <label for="Java">Java</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Php" value="php">
+                <label for="Php">Php</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Spring" value="spring">
+                <label for="Spring">Spring</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Docker" value="docker">
+                <label for="Docker">Docker</label>
+            </div>
         </fieldset>
         <input type="submit" value="Send">
     </form>
+<script src="main.js"></script>
 </body>
 </html>

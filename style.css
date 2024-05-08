@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-card{
+    border: 3px solid black;
+    border-radius: 2%;
+    height: 525px;
+    padding: 35px 15px;
+    background-color: hsl(120, 25%, 50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-text{
+    border: none;
+    outline-style: none;
+    border-radius: 5px;
+    height: 35px;
+    padding: 10px;
+    transition: padding 0.3s ease-in-out;
+}
+.input-text:focus{
+    padding: 17px;
+}
