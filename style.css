@@ -9,15 +9,16 @@ body{
     height: 100vh;
 }
 .form-card{
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 2%;
     height: 525px;
     padding: 35px 15px;
-    background-color: hsl(120, 25%, 50%);
+    background-color: hsl(120, 6%, 82%);
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    box-shadow: rgb(85, 85, 85) 1px 1px 3px 1px;
 }
 .input-text{
     border: none;
@@ -29,4 +30,26 @@ body{
 }
 .input-text:focus{
     padding: 17px;
+}
+select{
+    background-color: hsl(0, 1%, 32%);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+option{
+    background-color: hsl(0, 0%, 56%);
+    font-size: 14px;
+}
+fieldset{
+    border: none;
+}
+.submit-btn{
+    border: none;
+    border-radius: 5px;
+    box-shadow: black 0 1px 2px 1px;
+    padding: 4px 50px;
+    color: white;
+    background-color: rgb(74, 143, 90);
 }
