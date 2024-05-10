@@ -4,8 +4,7 @@ document.getElementById("opinion_form").addEventListener('submit', function(even
     const form = document.getElementById("opinion_form");
     const formData = new FormData(form);
 
-    
-    for (let pair of formData.entries()) {
-        console.log(pair[0] + ': ' + pair[1]);
+    for (let data of formData.entries()) {
+        console.log(data[1]);
     }
 });
